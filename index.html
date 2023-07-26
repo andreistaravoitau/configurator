@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/forms.css" />
+    <link rel="stylesheet" type="text/css" href="styles/cards.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="scripts/listeners.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="row main-cards">
+      
+      <div class="col-3">
+        <div class="card" id="skip-asymmetrical" onclick="onCardClickListener(this)">
+          <div class="card-body">
+            <h3 class="card-title">Skip<br> container<br> asymmetrical<br></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card" id="skip-symmetrical" onclick="onCardClickListener(this)">
+          <div class="card-body">
+            <h3 class="card-title">Skip<br> container<br> symmetrical<br></h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-3">
+        <div class="card" id="skip-with-top" onclick="onCardClickListener(this)">
+          <div class="card-body">
+            <h3 class="card-title">Skip<br> container<br> with top<br></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div
+          class="card"
+          id="skip-mini"
+          onclick="onCardClickListener(this)"
+        >
+          <div class="card-body">
+            <h3 class="card-title"><span class="invisible">lol</span><br>Mini skip<br> container <br></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div
+                class="card"
+                id="rol-of-container"
+                onclick="onCardClickListener(this)"
+        >
+          <div class="card-body">
+            <h3 class="card-title"><span class="invisible">lol</span><br>Roll off<br> container<br></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div
+                class="card"
+                id="platform"
+                onclick="onCardClickListener(this)"
+        >
+          <div class="card-body">
+            <h3 class="card-title"><span class="invisible">lol</span><br><span class="invisible">lol</span><br>Platforms</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div
+                class="card"
+                id="hydraulic-roll"
+                onclick="onCardClickListener(this)"
+        >
+          <div class="card-body">
+            <h3 class="card-title"><span class="invisible">lol</span><br>Hydraulic roll<br> off container</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div
+                class="card"
+                id="individual"
+                onclick="onCardClickListener(this)"
+        >
+          <div class="card-body">
+            <h3 class="card-title"><span class="invisible">lol</span><br>Individual<br> container</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="forms" id="form-skip-asymmetrical">
+      <script>
+        $(function () {
+          $("#form-skip-asymmetrical").load("configurator/skip-asymmetrical/form.html");
+        });
+      </script>
+    </form>
+
+    <form class="forms" id="form-skip-symmetrical">
+      <script>
+        $(function () {
+          $("#form-skip-symmetrical").load("configurator/skip-symmetrical/form.html");
+        });
+      </script>
+    </form>
+
+    <form class="forms" id="form-skip-with-top">
+      <script>
+        $(function () {
+          $("#form-skip-with-top").load("configurator/skip-with-top/form.html");
+        });
+      </script>
+    </form>
+
+    <form class="forms" id="form-skip-mini">
+      <script>
+        $(function () {
+          $("#form-skip-mini").load(
+            "configurator/skip-mini/form.html"
+          );
+        });
+      </script>
+    
+    </form>
+
+    <form class="forms" id="form-rol-of-container">
+      <script>
+        $(function () {
+          $("#form-rol-of-container").load(
+            "configurator/Roll_of_container/form.html"
+          );
+        });
+      </script>
+    </form>
+    
+    <form class="forms" id="form-platform">
+      <script>
+        $(function () {
+          $("#form-platform").load(
+            "configurator/platform/form.html"
+          );
+        });
+      </script>
+    </form>
+    
+    <form class="forms" id="form-hydraulic-roll">
+      <script>
+        $(function () {
+          $("#form-hydraulic-roll").load(
+            "configurator/hydraulic-roll/form.html"
+          );
+        });
+      </script>
+    </form>
+
+    <form class="forms" id="form-individual">
+      <script>
+        $(function () {
+          $("#form-individual").load(
+            "configurator/individual/form.html"
+          );
+        });
+      </script>
+    </form>
+  </body>
+</html>

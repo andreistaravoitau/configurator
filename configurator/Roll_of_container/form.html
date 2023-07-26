@@ -1,0 +1,386 @@
+<div class="row container-calculation">
+  <div class="col-lg-4 calculation-title">
+    <h2 class="section-title text-left">Configure your container</h2>
+  </div>
+  <div class="col-lg-8 calculation">
+    <div class="row">
+      <div class="col-lg-4 d-flex align-items-center">
+        <h2 id="innerVolume5">Volume</h2>
+      </div>
+      <div class="col-lg-8 volume">
+        <h4 id="innerLength5">Length</h4>
+        <h4 id="innerHeight5">Height</h4>
+        <h4 id="innerWidth5">Width</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <!-- Spalte links -->
+  <div class="col-lg-7">
+    <div class="row">
+      <div class="col-lg-6">
+        <label>Container type</label>
+        <div class="form-group custom-select-wrapper">
+          <select class="custom-select" name="groesse">
+            <option value="selectedContainer" id="selectedContainer">
+              Roll off container
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <label>Length</label>
+        <div class="form-group custom-select-wrapper">
+          <select class="custom-select" id="length5" name="groesse">
+            <option value="5000">5000mm</option>
+            <option value="5500">5500mm</option>
+            <option value="6000">6000mm</option>
+            <option value="6500">6500mm</option>
+            <option value="7000">7000mm</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <label>Height</label>
+        <div class="form-group custom-select-wrapper">
+          <select class="custom-select" id="height5" name="groesse">
+            <option value="750">750mm</option>
+            <option value="1000">1000mm</option>
+            <option value="1250">1250mm</option>
+            <option value="1500">1500mm</option>
+            <option value="1750">1750mm</option>
+            <option value="2000">2000mm</option>
+            <option value="2250">2250mm</option>
+            <option value="2400">2400mm</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <label>Width</label>
+        <div class="form-group custom-select-wrapper">
+          <select class="custom-select" id="width5" name="groesse">
+            <option value="2300">2300mm</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <label>Bottom thickness</label>
+        <div class="form-group custom-select-wrapper">
+          <select class="custom-select" name="groesse">
+            <option value="5">5mm</option>
+            <option value="6">6mm</option>
+            <option value="7">7mm</option>
+            <option value="8">8mm</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <label>Wall thickness</label>
+        <div class="form-group custom-select-wrapper">
+          <select class="custom-select" name="groesse">
+            <option value="3">3mm</option>
+            <option value="4">4mm</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <label>Number of pieces</label>
+        <div class="form-group custom-select-wrapper">
+          <select class="custom-select" name="groesse">
+            <option value="1">1 piece</option>
+            <option value="2">2 pieces</option>
+            <option value="3">3 pieces</option>
+            <option value="4">4 pieces</option>
+            <option value="5">5 pieces</option>
+            <option value="6">6 pieces</option>
+            <option value="7">7 pieces</option>
+            <option value="8">8 pieces</option>
+            <option value="9">9 pieces</option>
+            <option value="10">10 pieces</option>
+            <option value="11">11 pieces</option>
+            <option value="12">12 pieces</option>
+            <option value="13">13 pieces</option>
+            <option value="14">14 pieces</option>
+            <option value="15">15 pieces</option>
+            <option value="16">16 pieces</option>
+            <option value="17">17 pieces</option>
+            <option value="18">18 pieces</option>
+            <option value="19">19 pieces</option>
+            <option value="20">20 pieces</option>
+            <option value="20+">20+ pieces</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-6" id="RAL5"></div>
+      <script>
+        $(function () {
+          $("#RAL5").load("configurator/RAL.html");
+        });
+      </script>
+
+      <h4 class="modification-text">Specific modification</h4>
+      <h1>TODO</h1>
+      <!-- TODO: INSERT FIXED CODE -->
+
+      <div class="col-lg-6">
+        <label>Load Capacity</label>
+        <div class="form-group">
+          <select
+            class="form-control"
+            name="load-capacity"
+            placeholder="Enter Load Capacity"
+          >
+            <option>12,000 Kg</option>
+            <option>14,000 Kg</option>
+            <option>17,000 Kg</option>
+            <option>25,000 Kg</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-6 pb-5">
+        <label>Rear Variations</label>
+        <div class="form-group">
+          <select
+            class="form-control"
+            name="rear-variations"
+            placeholder="Enter Rear Variations"
+          >
+            <option>Hinged Doors</option>
+            <option>Hinged Doors</option>
+            <option>Hinged Doors</option>
+            <option>Hinged Doors</option>
+            <option>Hinged Doors</option>
+            <option>Hinged Doors</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <label>Company name</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="company-name"
+            placeholder="Enter Company Name"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <label>Legal form</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="legal-form"
+            placeholder="Enter Legal Form"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <label>Street/number</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="street-number"
+            placeholder="Enter Street/Number"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <label>Zip code</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="zip-code"
+            placeholder="Enter Zip Code"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <label>City</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="city"
+            placeholder="Enter City"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <label>Country</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="country"
+            placeholder="Enter Country"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <label>Registration number</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="registration-number"
+            placeholder="Enter Registration Number"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <label>VAT Number</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="vat-number"
+            placeholder="Enter VAT Number"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <label>Salutation</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="salutation"
+            placeholder="Enter Salutation"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <label>First name</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="first-name"
+            placeholder="Enter First Name"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <label>Last name</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="last-name"
+            placeholder="Enter Last Name"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <label>Phone number</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="phone-number"
+            placeholder="Enter Phone Number"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <label>Email</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="email"
+            placeholder="Enter Email"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <label>Quotation ID</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="quotation-id"
+            placeholder="Enter Quotation ID"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <label>Estimated Delivery</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="estimated-delivery"
+            placeholder="Enter Estimated Delivery"
+          />
+        </div>
+      </div>
+
+      <h2 class="section-title text-left pt-5 pb-5">
+        How would you like to pay?
+      </h2>
+      <div class="payment-section">
+        <div class="prepayment">
+          <h2>Prepayment</h2>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let lengthForm5 = document.querySelector("#length5");
+      let heightForm5 = document.querySelector("#height5");
+      let widthForm5 = document.querySelector("#width5");
+      let innerVolume5 = document.querySelector("#innerVolume5");
+      let innerHeight5 = document.querySelector("#innerHeight5");
+      let innerLength5 = document.querySelector("#innerLength5");
+      let innerWidth5 = document.querySelector("#innerWidth5");
+      function updateCalculation5() {
+        let calculatedVolume5 = (
+          (lengthForm5.value / 1000) *
+          (heightForm5.value / 1000) *
+          (widthForm5.value / 1000)
+        ).toFixed(2);
+
+        innerVolume5.innerHTML = "Volume " + calculatedVolume5 + " m3";
+        innerLength5.innerHTML = "Length " + lengthForm5.value + " mm";
+        innerHeight5.innerHTML = "Height " + heightForm5.value + " mm";
+        innerWidth5.innerHTML = "Width " + widthForm5.value + " mm";
+      }
+
+      updateCalculation5();
+
+      lengthForm5.addEventListener("input", () => {
+        updateCalculation5();
+      });
+      heightForm5.addEventListener("input", () => {
+        updateCalculation5();
+      });
+      widthForm5.addEventListener("input", () => {
+        updateCalculation5();
+      });
+    </script>
+  </div>
+</div>

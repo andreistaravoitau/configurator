@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Nohemi';
+  src: url(Nohemi-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Nohemi-Bold';
+  src: url(Nohemi-Bold.woff);
+  font-weight: 400;
+}
+
+:root {
+  --white: #fafafa;
+  --black: #010101;
+  --green: #2a503f;
+  --orange: #fe6e00;
+}
+
+body {
+  padding: 1%;
+  font-family: 'Nohemi', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  margin: 2%;
+}
+
+span {
+  color: var(--black) !important;
+}
+
+.main-cards{
+  margin: 0;
+}
+
+.modification-text{
+  padding: 45px 10px 25px 10px;
+}
+
+#gift-message-container{
+  padding: 12px;
+}
+
+.col-lg-6{
+  padding: 15px;
+}
+
+.col-lg-4{
+  padding: 15px;
+}

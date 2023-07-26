@@ -1,0 +1,39 @@
+.card {
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(0.95);
+  transition: all 0.2s ease;
+}
+
+.card-body{
+  padding: 150px 20px 0px 20px !important;
+  font-family: "Nohemi-Bold";
+}
+
+@keyframes fillFromLeft {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Apply the animation to the card */
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: darkorange; /* Replace this color with the desired filling color */
+  animation: fillFromLeft 1s forwards; /* Adjust the animation duration as needed */
+  z-index: -1; /* Move the pseudo-element behind the card content */
+}

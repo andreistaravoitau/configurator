@@ -1,0 +1,90 @@
+.forms {
+  display: none;
+}
+
+form {
+  background: var(--white);
+  color: var(--black);
+}
+
+select {
+  height: 3rem;
+  background: var(--white);
+  color: var(--black);
+  padding: 0 3%;
+  border-color: #C2C2C2;
+}
+
+select:hover{
+  transform: scale(0.95);
+  transition: all 0.2s ease;
+}
+
+input {
+  height: 3rem;
+  color: var(--black);
+  border: 0;
+  border-radius: 15px;
+  padding: 0 3%;
+}
+
+.form-control {
+  background: var(--white) !important;
+  color: var(--black) !important;
+}
+
+.form-group {
+  display: flex;
+}
+input + span {
+  margin-left: 1%;
+}
+
+select.custom-select {
+  width: 500px;
+}
+
+.volume{
+  display:flex;
+  justify-content: space-around;
+}
+
+.volume h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#innerVolume{
+  margin-bottom: 0;
+}
+
+.container-calculation{
+  margin: 50px 0 !important;
+}
+
+.calculation{
+  border: 1px solid #C2C2C2;
+  padding: 25px 0 20px;
+}
+
+.calculation-title{
+  padding: 20px;
+}
+
+.main-cards.row>* {
+  padding: 0 !important;
+}
+
+.info {
+  border-radius: 0;
+  border: 1px solid black;
+  padding: 5px 15px;
+  margin: 15px;
+}
+
+.extra{
+  padding: 45px 10px 0px 10px;
+  font-family: "Nohemi-Bold";
+}
