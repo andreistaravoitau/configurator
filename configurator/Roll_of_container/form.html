@@ -348,6 +348,16 @@
     </div>
 
     <script>
+      window.addEventListener('resize', ()=>{
+        if(window.innerWidth < 1122){
+          document.querySelectorAll[4]('.calculation').classList.remove('col-lg-8')
+          document.querySelectorAll[4]('.calculation').classList.add('col-lg-12')
+        }
+        else{
+          document.querySelectorAll[4]('.calculation').classList.add('col-lg-8')
+          document.querySelectorAll[4]('.calculation').classList.remove('col-lg-12')
+        }
+      })
       let lengthForm5 = document.querySelector("#length5");
       let heightForm5 = document.querySelector("#height5");
       let widthForm5 = document.querySelector("#width5");

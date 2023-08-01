@@ -348,6 +348,16 @@
     </div>
 
     <script>
+      window.addEventListener('resize', ()=>{
+        if(window.innerWidth < 1122){
+          document.querySelectorAll[6]('.calculation').classList.remove('col-lg-8')
+          document.querySelectorAll[6]('.calculation').classList.add('col-lg-12')
+        }
+        else{
+          document.querySelectorAll[6]('.calculation').classList.add('col-lg-8')
+          document.querySelectorAll[6]('.calculation').classList.remove('col-lg-12')
+        }
+      })
       let lengthForm7 = document.querySelector("#length7");
       let heightForm7 = document.querySelector("#height7");
       let widthForm7 = document.querySelector("#width7");
@@ -379,6 +389,11 @@
       widthForm7.addEventListener("input", () => {
         updateCalculation7();
       });
+      window.addEventListener('resize', ()=>{
+        if (window.innerWidth < 1127){
+
+      }
+      })
     </script>
   </div>
 </div>
