@@ -54,7 +54,7 @@ span {
   padding: 15px;
 }
 
-@media (min-width:1127px){
+@media (max-width:1127px){
   .calculation-title{
     display: none;
   }
