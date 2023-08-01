@@ -10,6 +10,11 @@
 .card-body{
   padding: 150px 20px 0px 20px !important;
   font-family: "Nohemi-Bold";
+  background: black;
+}
+
+.card-title{
+  color: white !important;
 }
 
 @keyframes fillFromLeft {

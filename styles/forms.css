@@ -1,5 +1,7 @@
 .forms {
   display: none;
+  background: black;
+  color: white;
 }
 
 form {
