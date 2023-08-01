@@ -53,3 +53,9 @@ span {
 .col-lg-4{
   padding: 15px;
 }
+
+@media (min-width:1127px){
+  .calculation-title{
+    display: none;
+  }
+}
