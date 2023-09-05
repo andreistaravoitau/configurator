@@ -46,6 +46,8 @@ span {
   padding: 12px;
   border: 1px solid #cfcfcf;
   margin: 15px;
+  justify-content: center;
+    align-items: center;
 }
 
 .col-lg-6{
@@ -60,4 +62,36 @@ span {
   .calculation-title{
     display: none;
   }
+}
+
+.information-bullet {
+  margin-left: auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  background: green;
+}
+
+.information-bullet::after {
+  content: attr(data-tooltip); /* Use 'data-tooltip' attribute for text content */
+  display: none;
+  position: absolute;
+  background-color: gray;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  top: 100%; /* Position below the .information-bullet */
+  left: 50%; /* Centered horizontally */
+  transform: translateX(-50%);
+  transition: opacity 0.3s, transform 0.3s; /* Add smooth animation */
+}
+
+.information-bullet:hover::after {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px); /* Move it slightly up for better alignment */
+}
+
+label {
+  max-width: 80%;
 }
