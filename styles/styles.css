@@ -49,6 +49,9 @@ span {
   justify-content: center;
     align-items: center;
 }
+#gift-message-container:hover{
+  background: #ececec;
+}
 
 .col-lg-6{
   padding: 15px;
@@ -66,11 +69,15 @@ span {
 
 .information-bullet {
   margin-left: auto;
-  width: 10px;
-  height: 10px;
-  border-radius: 15px;
-  background: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background: #bfbfbf;
+    display: flex;
+    justify-content: center;
+    color: #5e5e5e;
 }
+
 
 .information-bullet::after {
   content: attr(data-tooltip); /* Use 'data-tooltip' attribute for text content */
@@ -94,4 +101,25 @@ span {
 
 label {
   max-width: 80%;
+}
+
+.prepayment-modal {
+  height: 75px;
+  background: #e2e2e5;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin: 15px 0;
+  padding: 25px;
+}
+
+.arrow{
+  margin-left: auto;
+}
+
+.days {
+  border: 1px solid black;
+  width: 100px !important;
+  margin: 5px;
+  padding: 5px;
 }
