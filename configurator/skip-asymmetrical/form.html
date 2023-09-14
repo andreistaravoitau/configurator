@@ -1,3 +1,4 @@
+<form id="container-form" action="https://pkdevelopment.net/process-form" method="post">
 <div class="row container-calculation">
   <div class="col-lg-4 calculation-title">
     <h2 class="section-title text-left">Configure your container</h2>
@@ -425,67 +426,96 @@
                 <label>Price</label>
                   <input
                   type="text"
-                  class="form-control"
-                  name="phone-number"
-                  placeholder="Enter Phone Number"
+                  class="form-control payment"
+                  name="price"
+                  placeholder="EUR"
                   />
               </div>
 
               <div class="col-lg-3">
                 <label>Contract Duration</label>
                   <div class="form-group custom-select-wrapper">
-                    <select class="custom-select" name="selected-container">
-                      <option value="selectedContainer" id="selectedContainer">
-                        Containful
+                    <select class="custom-select" name="contract-duration">
+                      <option value="1month">
+                        1 Month
+                      </option>
+                      <option value="2month">
+                        2 Months
+                      </option>
+                      <option value="3month">
+                        3 Months
+                      </option>
+                      <option value="4month">
+                        4 Months
+                      </option>
+                      <option value="5month">
+                        5 Months
+                      </option>
+                      <option value="6month">
+                        6 Months
+                      </option>
+                      <option value="7month">
+                        7 Months
+                      </option>
+                      <option value="8month">
+                        8 Months
+                      </option>
+                      <option value="9month">
+                        9 Months
+                      </option>
+                      <option value="10month">
+                        10 Months
+                      </option>
+                      <option value="11month">
+                        11 Months
+                      </option>
+                      <option value="12month">
+                        12 Months
                       </option>
                     </select>
                   </div>
               </div>
 
               <div class="col-lg-3">
-                <label>Contract Duration</label>
-                  <div class="form-group custom-select-wrapper">
-                    <select class="custom-select" name="selected-container">
-                      <option value="selectedContainer" id="selectedContainer">
-                        Containful
-                      </option>
-                    </select>
-                  </div>
+                <label>Down Payment</label>
+                  <input
+                  type="text"
+                  class="form-control"
+                  name="down-payment"
+                  placeholder="EUR"
+                  />
               </div>
 
               <div class="col-lg-3">
-                <label>Contract Duration</label>
-                  <div class="form-group custom-select-wrapper">
-                    <select class="custom-select" name="selected-container">
-                      <option value="selectedContainer" id="selectedContainer">
-                        Containful
-                      </option>
-                    </select>
-                  </div>
+                <label>In Percentage</label>
+                  <input
+                  type="text"
+                  class="form-control"
+                  name="down-payment-percentage"
+                  placeholder=""
+                  />
               </div>
 
               <div class="col-lg-3">
-                <label>Contract Duration</label>
-                  <div class="form-group custom-select-wrapper">
-                    <select class="custom-select" name="selected-container">
-                      <option value="selectedContainer" id="selectedContainer">
-                        Containful
-                      </option>
-                    </select>
-                  </div>
+                <label>Final Installment</label>
+                  <input
+                  type="text"
+                  class="form-control"
+                  name="final-installment"
+                  placeholder="EUR"
+                  />
               </div>
 
               <div class="col-lg-3">
-                <label>Contract Duration</label>
-                  <div class="form-group custom-select-wrapper">
-                    <select class="custom-select" name="selected-container">
-                      <option value="selectedContainer" id="selectedContainer">
-                        Containful
-                      </option>
-                    </select>
-                  </div>
+                <label>In Percentage</label>
+                  <input
+                  type="text"
+                  class="form-control"
+                  name="final-installment-percentage"
+                  placeholder=""
+                  />
               </div>
-
+              <button type="submit">Submit</button>
             </div>
 
 
@@ -627,8 +657,47 @@
     </div>
   </div>
 </div>
+</form>
 
 <script>
+
+const form = document.querySelector("#container-form");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Serialize form data into JSON
+    const formData = new FormData(form);
+    const formDataJSON = {};
+    formData.forEach((value, key) => {
+        formDataJSON[key] = value;
+    });
+
+    // Send form data to WordPress endpoint
+    fetch("https://pkdevelopment.net/process-form", {
+        method: "POST",
+        body: JSON.stringify(formDataJSON),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+        .then((response) => {
+            if (response.ok) {
+                // Handle success
+                console.log("Form data sent successfully");
+                // You can redirect or show a success message here
+            } else {
+                // Handle errors
+                console.error("Error sending form data");
+                // Display an error message to the user
+            }
+        })
+        .catch((error) => {
+            console.error("Error sending form data:", error);
+            // Handle network errors
+        });
+});
+
   window.addEventListener('resize', ()=>{
     if(window.innerWidth < 1122){
       document.querySelectorAll('.calculation')[0].classList.remove('col-lg-8')

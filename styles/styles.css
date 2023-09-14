@@ -123,3 +123,11 @@ label {
   margin: 5px;
   padding: 5px;
 }
+
+.col-lg-3{
+  padding: 15px;
+}
+
+.payment{
+  border: 1px solid black;
+}

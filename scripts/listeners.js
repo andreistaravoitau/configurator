@@ -30,12 +30,13 @@ function onVolumeChange(){
   document.getElementById("groesse").value = Math.round(length*height*2.3/1000000)
 }
 
-let prePaymentModal = document.querySelector('.prepayment-modal')
+// let prePaymentModal = document.querySelector('.prepayment-modal')
 
-prePaymentModal.addEventListener('click', ()=>{
+// prePaymentModal.addEventListener('click', ()=>{
   
-})
+// })
 
 // document.querySelector("#RAL").addEventListener("input", ()=>{
 //
 // })
+
