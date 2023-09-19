@@ -131,3 +131,7 @@ label {
 .payment{
   border: 1px solid black;
 }
+
+.days-fix{
+  height: 1.5rem;
+}
