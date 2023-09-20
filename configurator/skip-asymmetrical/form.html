@@ -168,11 +168,11 @@
         <div class="form-group">
           <select class="form-control" name="rear-variations" placeholder="Enter Rear Variations">
             <option>Hinged Doors</option>
-            <option>Hinged Doors</option>
-            <option>Hinged Doors</option>
-            <option>Hinged Doors</option>
-            <option>Hinged Doors</option>
-            <option>Hinged Doors</option>
+              <option>Bolts at the top, Pivoting at the bottom(PK1)</option>
+              <option>Cross Member above, swingable below (PK2)</option>
+              <option>Upper cross member, swingable below, seal (PK3)</option>
+              <option>Single wing door</option>
+              <option>Combination door</option>
           </select>
         </div>
       </div>
@@ -735,9 +735,9 @@ form.addEventListener("submit", function (e) {
   let innerWidth = document.querySelector("#innerWidth");
   function updateCalculation() {
     let calculatedVolume = (
-      (lengthForm.value / 1000) *
-      (heightForm.value / 1000) *
-      (widthForm.value / 1000)
+      (parseInt(lengthForm.value) / 1000) *
+      (parseInt(heightForm.value) / 1000) *
+      (parseInt(widthForm.value) / 1000)
     ).toFixed(2);
 
     innerVolume.innerHTML = "Volume " + calculatedVolume + " m3";
