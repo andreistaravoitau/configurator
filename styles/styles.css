@@ -121,7 +121,7 @@ label {
   border: 1px solid black;
   width: 100px !important;
   margin: 5px;
-  padding: 5px;
+  padding: 0 !important;
 }
 
 .col-lg-3{
@@ -134,4 +134,22 @@ label {
 
 .days-fix{
   height: 1.5rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the label to look like a button */
+label.button-like {
+  display: inline-block;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* Style the label when the radio button is checked */
+input[type="radio"]:checked + label.button-like {
+  background-color: #e74c3c;
 }
