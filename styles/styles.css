@@ -83,12 +83,10 @@ span {
   content: attr(data-tooltip); /* Use 'data-tooltip' attribute for text content */
   display: none;
   position: absolute;
-  background-color: gray;
-  color: black;
+  background-color: black;
+  color: white;
   padding: 10px;
   border-radius: 5px;
-  top: 100%; /* Position below the .information-bullet */
-  left: 50%; /* Centered horizontally */
   transform: translateX(-50%);
   transition: opacity 0.3s, transform 0.3s; /* Add smooth animation */
 }
@@ -136,7 +134,7 @@ label {
   height: 1.5rem;
 }
 
-input[type="radio"] {
+.days input[type="radio"] {
   display: none;
 }
 
@@ -150,6 +148,6 @@ label.button-like {
 }
 
 /* Style the label when the radio button is checked */
-input[type="radio"]:checked + label.button-like {
+.days:active {
   background-color: #e74c3c;
 }
