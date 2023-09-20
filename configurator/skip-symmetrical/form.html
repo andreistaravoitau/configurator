@@ -685,7 +685,7 @@ form2.addEventListener("submit", function (e) {
     e.preventDefault();
 
     // Serialize form data into JSON
-    const formData = new FormData(form);
+    const formData = new FormData(form2);
     const formDataJSON = {};
     formData.forEach((value, key) => {
         formDataJSON[key] = value;
