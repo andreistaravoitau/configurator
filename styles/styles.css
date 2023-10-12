@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Nohemi';
+  font-family: "Nohemi";
   src: url(Nohemi-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Nohemi-Bold';
+  font-family: "Nohemi-Bold";
   src: url(Nohemi-Bold.woff);
   font-weight: 400;
 }
@@ -18,7 +18,7 @@
 
 body {
   padding: 5%;
-  font-family: 'Nohemi', sans-serif !important;
+  font-family: "Nohemi", sans-serif !important;
   font-weight: 400 !important;
   background: white !important;
 }
@@ -34,53 +34,54 @@ span {
   color: var(--black) !important;
 }
 
-.main-cards{
+.main-cards {
   margin: 0;
 }
 
-.modification-text{
+.modification-text {
   padding: 45px 10px 25px 10px;
 }
 
-#gift-message-container{
+#gift-message-container {
   padding: 12px;
   border: 1px solid #cfcfcf;
   margin: 15px;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 }
-#gift-message-container:hover{
+#gift-message-container:hover {
   background: #ececec;
 }
 
-.col-lg-6{
+.col-lg-6 {
   padding: 15px;
 }
 
-.col-lg-4{
+.col-lg-4 {
   padding: 15px;
 }
 
-@media (max-width:1127px){
-  .calculation-title{
+@media (max-width: 1127px) {
+  .calculation-title {
     display: none;
   }
 }
 
 .information-bullet {
   margin-left: auto;
-    width: 20px;
-    height: 20px;
-    border-radius: 15px;
-    background: #bfbfbf;
-    display: flex;
-    justify-content: center;
-    color: #5e5e5e;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background: #bfbfbf;
+  display: flex;
+  justify-content: center;
+  color: #5e5e5e;
 }
 
-
 .information-bullet::after {
-  content: attr(data-tooltip); /* Use 'data-tooltip' attribute for text content */
+  content: attr(
+    data-tooltip
+  ); /* Use 'data-tooltip' attribute for text content */
   display: none;
   position: absolute;
   background-color: black;
@@ -111,7 +112,7 @@ label {
   padding: 25px;
 }
 
-.arrow{
+.arrow {
   margin-left: auto;
 }
 
@@ -122,15 +123,15 @@ label {
   padding: 0 !important;
 }
 
-.col-lg-3{
+.col-lg-3 {
   padding: 15px;
 }
 
-.payment{
+.payment {
   border: 1px solid black;
 }
 
-.days-fix{
+.days-fix {
   height: 1.5rem;
 }
 
@@ -150,4 +151,36 @@ label.button-like {
 /* Style the label when the radio button is checked */
 .days:active {
   background-color: #e74c3c;
+}
+
+/* ANDREI */
+.accordion-item {
+  margin-bottom: 3%;
+}
+
+.d-none {
+  display: none;
+}
+
+.button-like-radio {
+  display: inline-table;
+  margin: 5px;
+  text-align: center;
+}
+
+.button-like-radio span {
+  display: block;
+  padding: 5px;
+  border: 2px solid #00bcd4;
+  border-radius: 5px;
+}
+
+.button-like-radio:hover span {
+  background: #00bcd4;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + span {
+  color: #fff;
+  background: #00bcd4;
 }

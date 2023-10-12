@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Title</title>
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="stylesheet" type="text/css" href="styles/forms.css" />
     <link rel="stylesheet" type="text/css" href="styles/cards.css" />
@@ -12,36 +17,30 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
     <script src="scripts/listeners.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts/iframeResizer.contentWindow.min.js"></script>
   </head>
   <body>
     <div class="row main-cards">
-      
       <div class="col-3">
-        <div class="card" id="skip-asymmetrical" onclick="onCardClickListener(this)">
+        <div
+          class="card"
+          id="skip-asymmetrical"
+          onclick="onCardClickListener(this)"
+        >
           <div class="card-body">
-            <h3 class="card-title">Skip<br> container<br> asymmetrical<br></h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <div class="card" id="skip-symmetrical" onclick="onCardClickListener(this)">
-          <div class="card-body">
-            <h3 class="card-title">Skip<br> container<br> symmetrical<br></h3>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-3">
-        <div class="card" id="skip-with-top" onclick="onCardClickListener(this)">
-          <div class="card-body">
-            <h3 class="card-title">Skip<br> container<br> with top<br></h3>
+            <h3 class="card-title">
+              Skip<br />
+              container<br />
+              asymmetrical<br />
+            </h3>
           </div>
         </div>
       </div>
@@ -49,59 +48,95 @@
       <div class="col-3">
         <div
           class="card"
-          id="skip-mini"
+          id="skip-symmetrical"
           onclick="onCardClickListener(this)"
         >
           <div class="card-body">
-            <h3 class="card-title"><span class="invisible">lol</span><br>Mini skip<br> container <br></h3>
+            <h3 class="card-title">
+              Skip<br />
+              container<br />
+              symmetrical<br />
+            </h3>
           </div>
         </div>
       </div>
 
       <div class="col-3">
         <div
-                class="card"
-                id="rol-of-container"
-                onclick="onCardClickListener(this)"
+          class="card"
+          id="skip-with-top"
+          onclick="onCardClickListener(this)"
         >
           <div class="card-body">
-            <h3 class="card-title"><span class="invisible">lol</span><br>Roll off<br> container<br></h3>
+            <h3 class="card-title">
+              Skip<br />
+              container<br />
+              with top<br />
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card" id="skip-mini" onclick="onCardClickListener(this)">
+          <div class="card-body">
+            <h3 class="card-title">
+              <span class="invisible">lol</span><br />Mini skip<br />
+              container <br />
+            </h3>
           </div>
         </div>
       </div>
 
       <div class="col-3">
         <div
-                class="card"
-                id="platform"
-                onclick="onCardClickListener(this)"
+          class="card"
+          id="rol-of-container"
+          onclick="onCardClickListener(this)"
         >
           <div class="card-body">
-            <h3 class="card-title"><span class="invisible">lol</span><br><span class="invisible">lol</span><br>Platforms</h3>
+            <h3 class="card-title">
+              <span class="invisible">lol</span><br />Roll off<br />
+              container<br />
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card" id="platform" onclick="onCardClickListener(this)">
+          <div class="card-body">
+            <h3 class="card-title">
+              <span class="invisible">lol</span><br /><span class="invisible"
+                >lol</span
+              ><br />Platforms
+            </h3>
           </div>
         </div>
       </div>
 
       <div class="col-3">
         <div
-                class="card"
-                id="hydraulic-roll"
-                onclick="onCardClickListener(this)"
+          class="card"
+          id="hydraulic-roll"
+          onclick="onCardClickListener(this)"
         >
           <div class="card-body">
-            <h3 class="card-title"><span class="invisible">lol</span><br>Hydraulic roll<br> off container</h3>
+            <h3 class="card-title">
+              <span class="invisible">lol</span><br />Hydraulic roll<br />
+              off container
+            </h3>
           </div>
         </div>
       </div>
 
       <div class="col-3">
-        <div
-                class="card"
-                id="individual"
-                onclick="onCardClickListener(this)"
-        >
+        <div class="card" id="individual" onclick="onCardClickListener(this)">
           <div class="card-body">
-            <h3 class="card-title"><span class="invisible">lol</span><br>Individual<br> container</h3>
+            <h3 class="card-title">
+              <span class="invisible">lol</span><br />Individual<br />
+              container
+            </h3>
           </div>
         </div>
       </div>
@@ -110,7 +145,9 @@
     <form class="forms" id="form-skip-asymmetrical">
       <script>
         $(function () {
-          $("#form-skip-asymmetrical").load("configurator/skip-asymmetrical/form.html");
+          $("#form-skip-asymmetrical").load(
+            "configurator/skip-asymmetrical/form.html"
+          );
         });
       </script>
     </form>
@@ -118,7 +155,9 @@
     <form class="forms" id="form-skip-symmetrical">
       <script>
         $(function () {
-          $("#form-skip-symmetrical").load("configurator/skip-symmetrical/form.html");
+          $("#form-skip-symmetrical").load(
+            "configurator/skip-symmetrical/form.html"
+          );
         });
       </script>
     </form>
@@ -134,12 +173,9 @@
     <form class="forms" id="form-skip-mini">
       <script>
         $(function () {
-          $("#form-skip-mini").load(
-            "configurator/skip-mini/form.html"
-          );
+          $("#form-skip-mini").load("configurator/skip-mini/form.html");
         });
       </script>
-    
     </form>
 
     <form class="forms" id="form-rol-of-container">
@@ -151,17 +187,15 @@
         });
       </script>
     </form>
-    
+
     <form class="forms" id="form-platform">
       <script>
         $(function () {
-          $("#form-platform").load(
-            "configurator/platform/form.html"
-          );
+          $("#form-platform").load("configurator/platform/form.html");
         });
       </script>
     </form>
-    
+
     <form class="forms" id="form-hydraulic-roll">
       <script>
         $(function () {
@@ -175,11 +209,14 @@
     <form class="forms" id="form-individual">
       <script>
         $(function () {
-          $("#form-individual").load(
-            "configurator/individual/form.html"
-          );
+          $("#form-individual").load("configurator/individual/form.html");
         });
       </script>
     </form>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+    ></script>
   </body>
 </html>

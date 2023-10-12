@@ -358,66 +358,95 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-12">
+    <div class="col-lg-12 accordion" id="accordionPanelsStayOpenExample">
       <h2 class="section-title text-left pt-5 pb-5">
           How would you like to pay?
         </h2>
       <div class="payment-section">
-        <div class="prepayment">
+        <div class="accordion-item">
           <div class="col-lg-12">
-            <div class="prepayment-modal">
-              Prepayment
-              <img class="arrow" src="down-arrow.svg" height="20px" width="20px">
-            </div>
-            <div class="prepayment-modal-input">
-                <h6>The whole amount will be requested in the single bill.</h6>
+            <h2 class=" accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+               data-mdb-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+               Prepayment
+              </button>
+              <!--  <img class="arrow" src="down-arrow.svg" height="20px" width="20px"> -->
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+              <div class="accordion-body">The whole amount will be requested in the single bill.</div>
             </div>
           </div>
         </div>
       </div>
   
       <div class="payment-section">
-        <div class="prepayment">
-            <div class="prepayment-modal">
-              Pay in a period
-              <img class="arrow" src="down-arrow.svg" height="20px" width="20px">
-            </div>
-            <div class="row d-flex justify-content-around align-items-center">
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="14 days" id="interval_14" />
-                <label class="button-like" for="interval_14">14 days</label>
+        <div class="prepayment accordion-item">
+            <h2 class=" accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                Pay in a period
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+              <div class="accordion-body">
+
+                <!-- class="row d-flex justify-content-around align-items-center" -->
+              <div  style="grid-auto-flow: column; display: grid;">
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input class="d-none" type="radio" name="Pay In Period:" value="14 days" id="interval_14" />
+                  <span>14 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input class="d-none" type="radio" name="Pay In Period:" value="60 days" id="interval_60" />
+                  <span>60 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input class="d-none" type="radio" name="Pay In Period:" value="90 days" id="interval_90" />
+                <span>90 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input class="d-none" type="radio" name="Pay In Period:" value="120 days" id="interval_120" />
+                <span>120 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input class="d-none" type="radio" name="Pay In Period:" value="180 days" id="interval_180" />
+                <span>180 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input class="d-none" type="radio" name="Pay In Period:" value="360 days" id="interval_360" />
+                  <span>360 days</span>
+                </label>
+                <!-- </div> -->
               </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="60 days" id="interval_60" />
-                <label class="button-like" for="interval_60">60 days</label>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="90 days" id="interval_90" />
-                <label class="button-like" for="interval_90">90 days</label>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="120 days" id="interval_120" />
-                <label class="button-like" for="interval_120">120 days</label>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="180 days" id="interval_180" />
-                <label class="button-like" for="interval_180">180 days</label>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="360 days" id="interval_360" />
-                <label class="button-like" for="interval_360">360 days</label>
               </div>
             </div>
         </div>
       </div>
   
       <div class="payment-section">
-        <div class="prepayment">
+        <div class="accordion-item">
           <div class="col-lg-12">
-            <div class="prepayment-modal">
-              Lease Purchase
-              <img class="arrow" src="down-arrow.svg" height="20px" width="20px">
-            </div>
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Lease Purchase
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+              <div class="accordion-body">
             <div class="row">
   
               <div class="col-lg-3">
@@ -540,7 +569,8 @@
   
   
           </div>
-  
+        </div>
+      </div>
         </div>
       </div>
     </div>
