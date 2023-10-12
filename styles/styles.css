@@ -184,3 +184,6 @@ input[type="radio"]:checked + span {
   color: #fff;
   background: #00bcd4;
 }
+.right {
+  float: right;
+}

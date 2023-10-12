@@ -1,4 +1,8 @@
-<form id="container-form2" action="https://pkdevelopment.net/process-form" method="post">
+<form
+  id="container-form2"
+  action="https://pkdevelopment.net/process-form"
+  method="post"
+>
   <div class="row container-calculation">
     <div class="col-lg-4 calculation-title">
       <h2 class="section-title text-left">Configure your container</h2>
@@ -92,23 +96,23 @@
           <div class="form-group custom-select-wrapper">
             <select class="custom-select" name="frame-distance">
               <option value="5,5 cbm">5,5 cbm</option>
-  
+
               <option value="7 cbm">7 cbm</option>
-  
+
               <option value="10 cbm">10 cbm</option>
-  
+
               <option value="12 cbm">12 cbm</option>
             </select>
           </div>
         </div>
-  
+
         <div class="col-lg-6" id="RAL2"></div>
         <script>
           $(function () {
             $("#RAL2").load("configurator/RAL.html");
           });
         </script>
-  
+
         <div class="col-lg-6">
           <label>Number of pieces</label>
           <div class="form-group custom-select-wrapper">
@@ -148,13 +152,17 @@
             </select>
           </div>
         </div>
-  
+
         <h4 class="modification-text">Specific modification</h4>
-  
+
         <div class="col-lg-6">
           <label>Load Capacity</label>
           <div class="form-group">
-            <select class="form-control" name="load-capacity" placeholder="Enter Load Capacity">
+            <select
+              class="form-control"
+              name="load-capacity"
+              placeholder="Enter Load Capacity"
+            >
               <option>12,000 Kg</option>
               <option>14,000 Kg</option>
               <option>17,000 Kg</option>
@@ -162,11 +170,15 @@
             </select>
           </div>
         </div>
-  
+
         <div class="col-lg-6 pb-5">
           <label>Rear Variations</label>
           <div class="form-group">
-            <select class="form-control" name="rear-variations" placeholder="Enter Rear Variations">
+            <select
+              class="form-control"
+              name="rear-variations"
+              placeholder="Enter Rear Variations"
+            >
               <option>Hinged Doors</option>
               <option>Bolts at the top, Pivoting at the bottom(PK1)</option>
               <option>Cross Member above, swingable below (PK2)</option>
@@ -176,7 +188,7 @@
             </select>
           </div>
         </div>
-  
+
         <div class="col-lg-4">
           <label>Company name</label>
           <div class="form-group">
@@ -188,7 +200,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-4">
           <label>Legal form</label>
           <div class="form-group">
@@ -200,7 +212,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-4">
           <label>Street/number</label>
           <div class="form-group">
@@ -212,7 +224,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-4">
           <label>Zip code</label>
           <div class="form-group">
@@ -224,7 +236,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-4">
           <label>City</label>
           <div class="form-group">
@@ -236,7 +248,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-4">
           <label>Country</label>
           <div class="form-group">
@@ -248,7 +260,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-6">
           <label>Registration number</label>
           <div class="form-group">
@@ -260,7 +272,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-6">
           <label>VAT Number</label>
           <div class="form-group">
@@ -272,7 +284,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-4">
           <label>Salutation</label>
           <div class="form-group">
@@ -284,7 +296,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-4">
           <label>First name</label>
           <div class="form-group">
@@ -296,7 +308,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-4">
           <label>Last name</label>
           <div class="form-group">
@@ -308,7 +320,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-6">
           <label>Phone number</label>
           <div class="form-group">
@@ -320,7 +332,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-6">
           <label>Email</label>
           <div class="form-group">
@@ -332,7 +344,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-6">
           <label>Quotation ID</label>
           <div class="form-group">
@@ -344,7 +356,7 @@
             />
           </div>
         </div>
-  
+
         <div class="col-lg-6">
           <label>Estimated Delivery</label>
           <div class="form-group">
@@ -371,361 +383,580 @@
           background-color: var(--form-background);
           /* Not removed via appearance */
           margin: 0.13rem 0.5rem 0 0;
-  
+
           font: inherit;
           width: 1rem;
           height: 1rem;
           /* transform: translateY(-0.075em); */
-  
+
           display: grid;
           place-content: center;
           padding: 1%;
           border-radius: 5px;
           border: 3px solid #5e5e5e;
         }
-  
+
         #gift-checkbox::before {
           content: "";
           width: 0.65rem;
           height: 0.65rem;
-          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          clip-path: polygon(
+            14% 44%,
+            0 65%,
+            50% 100%,
+            100% 16%,
+            80% 0%,
+            43% 62%
+          );
           transform: scale(0);
           transform-origin: center;
           transition: 120ms transform ease-in-out;
           /* Windows High Contrast Mode */
           background-color: CanvasText;
         }
-  
+
         #gift-checkbox:checked::before {
           transform: scale(1);
         }
       </style>
-  
+
       <h6 class="extra">Extras</h6>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Water Drainage Holes" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Water Drainage Holes"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Water drainage holes</label>
-        <div class="information-bullet" data-tooltip="Adds water drainage holes in order to drain the water at anytime.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="Adds water drainage holes in order to drain the water at anytime."
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Warning Markers" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Warning Markers"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Warning markers</label>
-        <div class="information-bullet" data-tooltip="Adds warning markers onto container.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="Adds warning markers onto container."
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Transport Safety Bracket" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Transport Safety Bracket"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Transport safety bracket</label>
-        <div class="information-bullet" data-tooltip="Adds the transport safety bracket for easier transporting in the future.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="Adds the transport safety bracket for easier transporting in the future."
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Net Hooks Standard" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Net Hooks Standard"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Net hooks Standard</label>
-        <div class="information-bullet" data-tooltip="Adds net hooks." >!</div>
+        <div class="information-bullet" data-tooltip="Adds net hooks.">!</div>
       </div>
-  
+
       <h6 class="extra">Tilting bearings</h6>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Additional stiffeners on the outer edges - sheet metal angle 4mm" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Additional stiffeners on the outer edges - sheet metal angle 4mm"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message"
-          >Additional stiffeners on the outer edges - sheet metal angle 4mm</label
+          >Additional stiffeners on the outer edges - sheet metal angle
+          4mm</label
         >
-        <div class="information-bullet" data-tooltip="Additional stiffeners on the outer edges to make sure that the container is much sustainable.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="Additional stiffeners on the outer edges to make sure that the container is much sustainable."
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Forged suspension pins: ⌀ 45 mm" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Forged suspension pins: ⌀ 45 mm"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Forged suspension pins: ⌀ 45 mm</label>
-        <div class="information-bullet" data-tooltip="Adds Forged Suspension Pins to the container">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="Adds Forged Suspension Pins to the container"
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="UVV safety regulations, device for DGUV BGR badge" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="UVV safety regulations, device for DGUV BGR badge"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message"
           >UVV safety regulations, device for DGUV BGR badge</label
         >
-        <div class="information-bullet" data-tooltip="This option will make sure that when selected, the container will pass UVV safety regulations.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="This option will make sure that when selected, the container will pass UVV safety regulations."
+        >
+          !
+        </div>
       </div>
       <h6 class="extra">Tilting bearings</h6>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Fully welded, inside and outside completely welded through" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Fully welded, inside and outside completely welded through"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message"
           >Fully welded, inside and outside completely welded through</label
         >
-        <div class="information-bullet" data-tooltip="This option allows to have a fully welded container inside out.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="This option allows to have a fully welded container inside out."
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Galvanized finish" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Galvanized finish"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Galvanized finish</label>
-        <div class="information-bullet" data-tooltip="Adds a galvanized, shiny finish onto container.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="Adds a galvanized, shiny finish onto container."
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Container tested and approved to BGR 186" id="gift-checkbox" value="required"/>
-        <label for="gift-message">Container tested and approved to BGR 186</label>
-        <div class="information-bullet" data-tooltip="This option makes sure that the container passes BGR 186.">!</div>
+        <input
+          type="checkbox"
+          name="Container tested and approved to BGR 186"
+          id="gift-checkbox"
+          value="required"
+        />
+        <label for="gift-message"
+          >Container tested and approved to BGR 186</label
+        >
+        <div
+          class="information-bullet"
+          data-tooltip="This option makes sure that the container passes BGR 186."
+        >
+          !
+        </div>
       </div>
       <h6 class="extra">Tilting bearings</h6>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Interior primer (zinc phosphate)" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Interior primer (zinc phosphate)"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Interior primer (zinc phosphate)</label>
-        <div class="information-bullet" data-tooltip="Adds zinc phosphate onto container as a finish.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="Adds zinc phosphate onto container as a finish."
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Exterior primer" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Exterior primer"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Exterior primer</label>
         <div class="information-bullet" data-tooltip="Adds primer.">!</div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Exterior paint" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Exterior paint"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Exterior paint</label>
-        <div class="information-bullet" data-tooltip="Adds paint of your choice(to be decided later).">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="Adds paint of your choice(to be decided later)."
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="All corners reinforced" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="All corners reinforced"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">All corners reinforced</label>
-        <div class="information-bullet" data-tooltip="This option allows to have corners reinforced for more sustainability and durability.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="This option allows to have corners reinforced for more sustainability and durability."
+        >
+          !
+        </div>
       </div>
       <div id="gift-message-container" style="display: flex">
-        <input type="checkbox" name="Hot dip galvanized" id="gift-checkbox" value="required"/>
+        <input
+          type="checkbox"
+          name="Hot dip galvanized"
+          id="gift-checkbox"
+          value="required"
+        />
         <label for="gift-message">Hot dip galvanized</label>
-        <div class="information-bullet" data-tooltip="Adds a galvanize finish to the container.">!</div>
+        <div
+          class="information-bullet"
+          data-tooltip="Adds a galvanize finish to the container."
+        >
+          !
+        </div>
       </div>
     </div>
-    <div class="col-lg-7">
+    <div class="col-lg-12 accordion" id="accordionPanelsStayOpenExample">
       <h2 class="section-title text-left pt-5 pb-5">
-          How would you like to pay?
-        </h2>
+        How would you like to pay?
+      </h2>
       <div class="payment-section">
-        <div class="prepayment">
+        <div class="accordion-item">
           <div class="col-lg-12">
-            <div class="prepayment-modal">
-              Prepayment
-              <img class="arrow" src="down-arrow.svg" height="20px" width="20px">
-            </div>
-            <div class="prepayment-modal-input">
-                <h6>The whole amount will be requested in the single bill.</h6>
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Prepayment
+              </button>
+              <!--  <img class="arrow" src="down-arrow.svg" height="20px" width="20px"> -->
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+            >
+              <div class="accordion-body">
+                The whole amount will be requested in the single bill.
+              </div>
             </div>
           </div>
         </div>
       </div>
-  
+
       <div class="payment-section">
-        <div class="prepayment">
-            <div class="prepayment-modal">
+        <div class="prepayment accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
               Pay in a period
-              <img class="arrow" src="down-arrow.svg" height="20px" width="20px">
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+          >
+            <div class="accordion-body">
+              <!-- class="row d-flex justify-content-around align-items-center" -->
+              <div style="grid-auto-flow: column; display: grid">
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input
+                    class="d-none"
+                    type="radio"
+                    name="Pay In Period:"
+                    value="14 days"
+                    id="interval_14"
+                  />
+                  <span>14 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input
+                    class="d-none"
+                    type="radio"
+                    name="Pay In Period:"
+                    value="60 days"
+                    id="interval_60"
+                  />
+                  <span>60 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input
+                    class="d-none"
+                    type="radio"
+                    name="Pay In Period:"
+                    value="90 days"
+                    id="interval_90"
+                  />
+                  <span>90 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input
+                    class="d-none"
+                    type="radio"
+                    name="Pay In Period:"
+                    value="120 days"
+                    id="interval_120"
+                  />
+                  <span>120 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input
+                    class="d-none"
+                    type="radio"
+                    name="Pay In Period:"
+                    value="180 days"
+                    id="interval_180"
+                  />
+                  <span>180 days</span>
+                </label>
+                <!-- </div> -->
+                <!-- <div class="col-lg-2 d-flex justify-content-center days"> -->
+                <label class="button-like-radio">
+                  <input
+                    class="d-none"
+                    type="radio"
+                    name="Pay In Period:"
+                    value="360 days"
+                    id="interval_360"
+                  />
+                  <span>360 days</span>
+                </label>
+                <!-- </div> -->
+              </div>
             </div>
-            <div class="row d-flex justify-content-around align-items-center">
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="14 days" id="interval_14" />
-                <label class="button-like" for="interval_14">14 days</label>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="60 days" id="interval_60" />
-                <label class="button-like" for="interval_60">60 days</label>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="90 days" id="interval_90" />
-                <label class="button-like" for="interval_90">90 days</label>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="120 days" id="interval_120" />
-                <label class="button-like" for="interval_120">120 days</label>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="180 days" id="interval_180" />
-                <label class="button-like" for="interval_180">180 days</label>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center days">
-                <input type="radio" name="Pay In Period:" value="360 days" id="interval_360" />
-                <label class="button-like" for="interval_360">360 days</label>
-              </div>
-            </div>
+          </div>
         </div>
       </div>
-  
+
       <div class="payment-section">
-        <div class="prepayment">
+        <div class="accordion-item">
           <div class="col-lg-12">
-            <div class="prepayment-modal">
-              Lease Purchase
-              <img class="arrow" src="down-arrow.svg" height="20px" width="20px">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                Lease Purchase
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <label>Container type</label>
+                    <div class="form-group custom-select-wrapper">
+                      <select class="custom-select" name="selected-container">
+                        <option
+                          value="Roll Off Container"
+                          id="selectedContainer"
+                        >
+                          Roll Off Container
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <label>Manufacturer</label>
+                    <div class="form-group custom-select-wrapper">
+                      <select class="custom-select" name="manufacturer">
+                        <option value="containful">Containful</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <label>Price</label>
+                    <input
+                      type="text"
+                      class="form-control payment"
+                      name="price(LEASING)"
+                      placeholder="EUR"
+                    />
+                  </div>
+
+                  <div class="col-lg-3">
+                    <label>Contract Duration</label>
+                    <div class="form-group custom-select-wrapper">
+                      <select class="custom-select" name="contract-duration">
+                        <option value="1month">1 Month</option>
+                        <option value="2month">2 Months</option>
+                        <option value="3month">3 Months</option>
+                        <option value="4month">4 Months</option>
+                        <option value="5month">5 Months</option>
+                        <option value="6month">6 Months</option>
+                        <option value="7month">7 Months</option>
+                        <option value="8month">8 Months</option>
+                        <option value="9month">9 Months</option>
+                        <option value="10month">10 Months</option>
+                        <option value="11month">11 Months</option>
+                        <option value="12month">12 Months</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <label>Down Payment</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="down-payment"
+                      placeholder="EUR"
+                    />
+                  </div>
+
+                  <div class="col-lg-3">
+                    <label>In Percentage</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="down-payment-percentage"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div class="col-lg-3">
+                    <label>Final Installment</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="final-installment"
+                      placeholder="EUR"
+                    />
+                  </div>
+
+                  <div class="col-lg-3">
+                    <label>In Percentage</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="final-installment-percentage"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-  
-              <div class="col-lg-3">
-                <label>Container type</label>
-                  <div class="form-group custom-select-wrapper">
-                    <select class="custom-select" name="selected-container">
-                      <option value="Skip Container Symmetrical" id="selectedContainer">
-                        Skip Container Symmetrical
-                      </option>
-                    </select>
-                  </div>
-              </div>
-  
-              <div class="col-lg-3">
-                <label>Manufacturer</label>
-                  <div class="form-group custom-select-wrapper">
-                    <select class="custom-select" name="manufacturer">
-                      <option value="containful">
-                        Containful
-                      </option>
-                    </select>
-                  </div>
-              </div>
-  
-              <div class="col-lg-3">
-                <label>Price</label>
-                  <input
-                  type="text"
-                  class="form-control payment"
-                  name="price(LEASING)"
-                  placeholder="EUR"
-                  />
-              </div>
-  
-              <div class="col-lg-3">
-                <label>Contract Duration</label>
-                  <div class="form-group custom-select-wrapper">
-                    <select class="custom-select" name="contract-duration">
-                      <option value="1month">
-                        1 Month
-                      </option>
-                      <option value="2month">
-                        2 Months
-                      </option>
-                      <option value="3month">
-                        3 Months
-                      </option>
-                      <option value="4month">
-                        4 Months
-                      </option>
-                      <option value="5month">
-                        5 Months
-                      </option>
-                      <option value="6month">
-                        6 Months
-                      </option>
-                      <option value="7month">
-                        7 Months
-                      </option>
-                      <option value="8month">
-                        8 Months
-                      </option>
-                      <option value="9month">
-                        9 Months
-                      </option>
-                      <option value="10month">
-                        10 Months
-                      </option>
-                      <option value="11month">
-                        11 Months
-                      </option>
-                      <option value="12month">
-                        12 Months
-                      </option>
-                    </select>
-                  </div>
-              </div>
-  
-              <div class="col-lg-3">
-                <label>Down Payment</label>
-                  <input
-                  type="text"
-                  class="form-control"
-                  name="down-payment"
-                  placeholder="EUR"
-                  />
-              </div>
-  
-              <div class="col-lg-3">
-                <label>In Percentage</label>
-                  <input
-                  type="text"
-                  class="form-control"
-                  name="down-payment-percentage"
-                  placeholder=""
-                  />
-              </div>
-  
-              <div class="col-lg-3">
-                <label>Final Installment</label>
-                  <input
-                  type="text"
-                  class="form-control"
-                  name="final-installment"
-                  placeholder="EUR"
-                  />
-              </div>
-  
-              <div class="col-lg-3">
-                <label>In Percentage</label>
-                  <input
-                  type="text"
-                  class="form-control"
-                  name="final-installment-percentage"
-                  placeholder=""
-                  />
-              </div>
-              <button type="submit">Submit</button>
-            </div>
-  
-  
           </div>
-  
         </div>
+        <button class="right" type="submit">Submit</button>
       </div>
     </div>
   </div>
 </form>
 
 <script>
+  const form2 = document.querySelector("#container-form2");
 
-const form2 = document.querySelector("#container-form2");
-
-form2.addEventListener("submit", function (e) {
+  form2.addEventListener("submit", function (e) {
     e.preventDefault();
 
     // Serialize form data into JSON
     const formData = new FormData(form2);
     const formDataJSON = {};
     formData.forEach((value, key) => {
-        formDataJSON[key] = value;
+      formDataJSON[key] = value;
     });
 
     // Send form data to WordPress endpoint
     fetch("https://pkdevelopment.net/process-form", {
-        method: "POST",
-        body: JSON.stringify(formDataJSON),
-        headers: {
-            "Content-Type": "application/json",
-        },
+      method: "POST",
+      body: JSON.stringify(formDataJSON),
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
-        .then((response) => {
-            if (response.ok) {
-                // Handle success
-                console.log("Form data sent successfully");
-                // You can redirect or show a success message here
-            } else {
-                // Handle errors
-                console.error("Error sending form data");
-                // Display an error message to the user
-            }
-        })
-        .catch((error) => {
-            console.error("Error sending form data:", error);
-            // Handle network errors
-        });
-});
+      .then((response) => {
+        if (response.ok) {
+          // Handle success
+          console.log("Form data sent successfully");
+          // You can redirect or show a success message here
+        } else {
+          // Handle errors
+          console.error("Error sending form data");
+          // Display an error message to the user
+        }
+      })
+      .catch((error) => {
+        console.error("Error sending form data:", error);
+        // Handle network errors
+      });
+  });
 
-  window.addEventListener('resize', ()=>{
-    if(window.innerWidth < 1122){
-      document.querySelectorAll('.calculation')[1].classList.remove('col-lg-8')
-      document.querySelectorAll('.calculation')[1].classList.add('col-lg-12')
+  window.addEventListener("resize", () => {
+    if (window.innerWidth < 1122) {
+      document.querySelectorAll(".calculation")[1].classList.remove("col-lg-8");
+      document.querySelectorAll(".calculation")[1].classList.add("col-lg-12");
+    } else {
+      document.querySelectorAll(".calculation")[1].classList.add("col-lg-8");
+      document
+        .querySelectorAll(".calculation")[1]
+        .classList.remove("col-lg-12");
     }
-    else{
-      document.querySelectorAll('.calculation')[1].classList.add('col-lg-8')
-      document.querySelectorAll('.calculation')[1].classList.remove('col-lg-12')
-    }
-  })
+  });
   let lengthForm2 = document.querySelector("#length2");
   let heightForm2 = document.querySelector("#height2");
   let widthForm2 = document.querySelector("#width2");
